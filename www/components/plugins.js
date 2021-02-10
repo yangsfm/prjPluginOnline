@@ -5,9 +5,9 @@ $(document).on("click", "#alerta", function() {
 $(document).on("click", "#confirmar", function() {
   function confirma(buttonIndex) {
     if(buttonIndex == 1) {
-      navigator.notification.alert("Escolheu a opção B");
+      navigator.notification.alert("Você escolheu a opção B");
     }else{
-      navigator.notification.alert("Escolheu a opção A");     
+      navigator.notification.alert("Você escolheu a opção A");     
     }
   }
   navigator.notification.confirm("A ou B", confirma, "Escolha: ", ['B', 'A']);
